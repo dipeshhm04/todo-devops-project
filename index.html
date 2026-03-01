@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="main">
+
+    <div class="sidebar">
+        <h2>Task Planner</h2>
+        <p>Organize your day efficiently</p>
+    </div>
+
+    <div class="content">
+
+        <div class="add-task">
+            <input type="text" id="taskInput" placeholder="Enter task">
+            <input type="datetime-local" id="taskTime">
+            <button onclick="addTask()">Add Task</button>
+        </div>
+
+        <div class="section">
+            <h3 class="today-header" onclick="toggleSection('todayList')">Today ▼</h3>
+            <ul id="todayList"></ul>
+        </div>
+
+        <div class="section">
+            <h3 class="tomorrow-header" onclick="toggleSection('tomorrowList')">Tomorrow ▼</h3>
+            <ul id="tomorrowList" style="display:none;"></ul>
+        </div>
+
+        <div class="section">
+            <h3 class="upcoming-header" onclick="toggleSection('upcomingList')">Upcoming ▼</h3>
+            <ul id="upcomingList" style="display:none;"></ul>
+        </div>
+
+        <div class="section">
+            <h3 class="completed-header" onclick="toggleSection('completedList')">Completed ▼</h3>
+            <ul id="completedList" style="display:none;"></ul>
+        </div>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
