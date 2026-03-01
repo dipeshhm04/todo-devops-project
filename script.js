@@ -17,7 +17,7 @@ function addTask() {
     let time = document.getElementById("taskTime").value;
 
     if (text === "" || time === "") {
-        alert("Enter task and time");
+        alert("Enter task with time");
         return;
     }
 
